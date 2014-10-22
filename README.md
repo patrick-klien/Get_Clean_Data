@@ -4,6 +4,8 @@ This file will serve as an explanation of how the R function will work.  It is p
 
 Please note that this is only half of the explanation, there will also be a Code Book (codebook.md) containing and what purpose they have.  All variables that I use in this ReadMe file will be explained and defined there.
 
+Further note, this script will only work if the data is located in a directory called “data”
+
 ## Origin of the data
 
 Data for this project was supplied by the instructors of the course.  
@@ -34,5 +36,16 @@ You should create one R script called run_analysis.R that does the following.
 3. Uses descriptive activity names to name the activities in the data set.
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
+## The Script
+
+Here follows how the function will work.
+
+1. Read “test” data into R.
+2. Read “train” data into R.
+3. Merge two data-sets so that I have only one dataset.
+
+### Reading “test” data in
 
 
