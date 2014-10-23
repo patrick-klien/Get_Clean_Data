@@ -4,12 +4,9 @@ This file’s purpose is to define all variables that I will use in the R Script
 
 ## Variables
 
-### Reading data into R variables.
-
 - test_subject - variable used to hold the initial data read from file “subject_test.txt”.
   - This variable is mostly a temporary variable - will be disregarded later on when the data is merged.  
   - This variable represents the subjects that took part in the experiment. 
-  - This variable has 9 subjects numbered as follows in the file: 2, 4, 9, 10, 12, 13, 18, 20, 24.  
 - test_x_data - variable used to hold the initial data read from file “X_test.txt”.  
   - This variable is mostly a temporary variable - will be disregarded later on when the data is merged.  
   - This variable represents the actual data that was taken from the measurements of the activities.
@@ -22,6 +19,20 @@ This file’s purpose is to define all variables that I will use in the R Script
 - test_data - variable that will be used to hold all data for test in one place.  
   - Will column bind the data (test_x_data), then the activity (test_y_activity) and finally the subject (test_subject).
 
+- train_subject - variable used to hold the initial data read from file “subject_train.txt”.
+  - This variable is mostly a temporary variable - will be disregarded later on when the data is merged.  
+  - This variable represents the subjects that took part in the experiment. 
+- train_x_data - variable used to hold the initial data read from file “X_train.txt”.  
+  - This variable is mostly a temporary variable - will be disregarded later on when the data is merged.  
+  - This variable represents the actual data that was taken from the measurements of the activities.
+  - This variable will initially hold 561 columns, most of which will be discarded.
+- train_y_activity - variable used to hold the initial data read from file “y_train.txt”.
+  - This variable is mostly a temporary variable - will be disregarded later on when the data is merged.  
+  - This variable represents the various activities that were performed by the subjects listed in the “subject_train.txt” file.
+  - This variable has 6 possible activities: walking, walking upstairs, walking downstairs, sitting, standing and laying.  These activities were listed in the “activity_lables.txt” provided with the data.
+
+- train_data - variable that will be used to hold all data for test in one place.  
+  - Will column bind the data (test_x_data), then the activity (test_y_activity) and finally the subject (test_subject).
 
 - feature_names - variable used to give names to the different measurements in the “data” variables.
   — Will be discarded later.
@@ -37,3 +48,5 @@ This file’s purpose is to define all variables that I will use in the R Script
 
 - final_data - data frame that contains all data in one place.
   - Initially this data frame will contain extraneous columns that will be removed later.
+
+- keep_cols - reads data from a file called “edited_features.txt”.  This file has a list of all the columns that need to be kept for the final dataset.
