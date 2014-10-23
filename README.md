@@ -42,10 +42,32 @@ You should create one R script called run_analysis.R that does the following.
 
 Here follows how the function will work.
 
-1. Read “test” data into R.
-2. Read “train” data into R.
+1. Make sure that the directory exists.
+2. Make sure that the “test” files exist.
+3. Read “test” data into R.
+4. Make sure that the “train” files exist.
+5. Read “train” data into R.
+
 3. Merge two data-sets so that I have only one dataset.
 
 ### Reading “test” data into R.
 
+Read all the data into three separate variables: 
+- test_subject
+- test_x_data
+- test_y_activity
 
+This data will be imported using “colClasses = “numeric”” to make sure that the data is imported as numbers.
+
+Read the feature names to name the “test_data” variable. 
+
+Name the several columns for later use.
+
+Proceed then to bind the three variables together so that we have on variable for test containing all data in one place.
+
+
+### Renaming activities so that they are words instead of index numbers.
+
+The file “activity_labels.txt” contains all the activities and their respective index number.  
+
+Use this file to replace the index number in the “Activity” variable in the final data.
