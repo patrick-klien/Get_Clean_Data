@@ -4,7 +4,7 @@ This file will serve as an explanation of how the R function will work.  It is p
 
 Please note that this is only half of the explanation, there will also be a Code Book (codebook.md) containing and what purpose they have.  All variables that I use in this ReadMe file will be explained and defined there.
 
-Further note, this script will only work if the data is located in a directory called “data”
+Further note, for this function to work correctly -  all the data for the analysis needs to be in a directory called DATA (all caps).  
 
 ## Origin of the data
 
@@ -18,7 +18,7 @@ This dataset was extracted form the a Samsung Galaxy S II smartphone that each p
 - Standing 
 - Laying
 
-It consists of two sets of data - “test” and “train”.  Each has three separate main files:
+It consists of two sets of data - “test” and “train”.  Each in a separate directory and has three separate main files:
 - Subject 
   - The “subject” file is the person who performed the activities.
 - X
@@ -30,11 +30,11 @@ It consists of two sets of data - “test” and “train”.  Each has three se
 
 The assignment is defined as:
 
-You should create one R script called run_analysis.R that does the following. 
+You should create one R script called run_analysis.R that does the following.
 1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
 3. Uses descriptive activity names to name the activities in the data set.
-4. Appropriately labels the data set with descriptive variable names. 
+4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
@@ -46,6 +46,6 @@ Here follows how the function will work.
 2. Read “train” data into R.
 3. Merge two data-sets so that I have only one dataset.
 
-### Reading “test” data in
+### Reading “test” data into R.
 
 
