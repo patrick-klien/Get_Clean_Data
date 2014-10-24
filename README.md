@@ -117,20 +117,32 @@ This course project requires you to get the mean and standard deviation for all 
   - Y axis variable
   - Z axis variable
 - tBodyGyroJerk-XYZ
+  - X axis variable
+  - Y axis variable
+  - Z axis variable
 - tBodyAccMag
 - tGravityAccMag
 - tBodyAccJerkMag
 - tBodyGyroMag
 - tBodyGyroJerkMag
 - fBodyAcc-XYZ
+  - X axis variable
+  - Y axis variable
+  - Z axis variable
 - fBodyAccJerk-XYZ
+  - X axis variable
+  - Y axis variable
+  - Z axis variable
 - fBodyGyro-XYZ
+  - X axis variable
+  - Y axis variable
+  - Z axis variable
 - fBodyAccMag
 - fBodyAccJerkMag
 - fBodyGyroMag
 - fBodyGyroJerkMag
 
-Each of these variables has a “mean()” and “std()”.  All other variables were deleted.  
+There are a total of 33 measurement variables, where each of these variables has a “mean()” and “std()”.  All other variables were deleted. This results in 66 total variables to be considered for this course.  
 
 This resulted in 66 variables total - 1 for each measurement.  The other variables were derivations or had other measurements that were not supposed to be used.
 
